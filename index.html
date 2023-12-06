@@ -2,19 +2,367 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MonsterBPO</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MonsterBPO</title>
+  <!-- tailwind link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- tailwind cnd -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'bg1': "url(./images/ellipse 14.png)",
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+
+
 </head>
 
-<body>
-<header></header>
+<body class="font-inter">
+  <header class="w-full bg-gradient-to-b from-[#000] to-[#163C5F]">
+    <!-- navbar -->
+    <div class="navbar px-3">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
-<main></main>
+            <li>
+              <a href="" class="font-normal text-lg text-white bg-none">Services</a>
+              <ul class="p-2">
+                <li><a href="" class="font-normal text-lg">Submenu 1</a></li>
+                <li><a href="" class="font-normal text-lg">Submenu 2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="font-normal text-lg text-white bg-none">Company</a>
+              <ul class="p-2">
+                <li><a href="" class="font-normal text-lg">Submenu 1</a></li>
+                <li><a href="" class="font-normal text-lg">Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a href="" class="font-normal text-lg text-white bg-none">Careers</a></li>
+            <li><a href="" class="font-normal text-lg text-white bg-none">Contact</a></li>
+          </ul>
+        </div>
+        <a
+          class="btn btn-ghost inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-bold text-3xl">MonsterBPO</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
 
-<footer></footer>
+          <li>
+            <details>
+              <summary class="font-normal text-lg text-white bg-none">Services</summary>
+              <ul class="p-2">
+                <li><a href="" class="">Submenu 1</a></li>
+                <li><a href="" class="">Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="font-normal text-lg text-white bg-none">Company</summary>
+              <ul class="p-2">
+                <li><a href="" class="">Submenu 1</a></li>
+                <li><a href="" class="">Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="" class="font-normal text-lg text-white bg-none">Careers</a></li>
+          <li><a href="" class="font-normal text-lg text-white bg-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a
+          class="btn btn-ghost rounded-none border-none bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-medium text-lg text-white">Request
+          a Trial</a>
+      </div>
+    </div>
+    <!-- banner -->
+    <div class="flex justify-around items-center py-7 ">
+      <div class="space-y-2 grid gap-4">
+        <div>
+          <h3 class="font-extrabold text-xl text-white">Trusted Outsourcing with
+            <br>High-Quality Service
+          </h3>
+          <p class="font-extralight text-xs text-white">We are providing secured & quality solution to your
+            <br>business at a very affordable price. To better understand request for a free trial now-
+          </p>
+        </div>
+        <div class="">
+          <a
+            class="btn btn-ghost rounded-none border-none bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-medium text-sm text-white">Request
+            a Trial
+          </a>
+        </div>
+      </div>
+      <div>
+        <img class="" src="/images/banner.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto">
+    <!-- How we work -->
+    <section class="mt-20">
+      <div class="flex items-center justify-center gap-2">
+        <h3 class="font-bold text-lg">How we work </h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+          <path
+            d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
+            fill="black" />
+        </svg>
+      </div>
+      <p class="font-normal text-lg text-center">Steps we follow to execute a project</p>
+      <!-- working steps -->
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mt-8">
+        <!-- steps-1 -->
+        <div class="">
+          <div class="flex justify-center">
+            <div
+              class="w-32 h-32 border drop-shadow-lg bg-gradient-to-b from-[#005CEA] to-[#00C5FB] rounded-full flex items-center justify-center ">
+              <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+            </div>
+
+          </div>
+          <div class="mt-7">
+            <p class="font-normal text-sm text-center indent-2">From a 30-minute discovery call on a Zoom meeting, we will
+              discuss and then analyze your requirements first before proceeding onto the next steps.
+            </p>
+          </div>
+        </div>
+        <!-- steps-2 -->
+        <div class="">
+          <div class="flex justify-center">
+            <div
+              class="w-32 h-32 border drop-shadow-lg bg-gradient-to-t from-[#005CEA] to-[#00C5FB] rounded-full flex items-center justify-center ">
+              <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+            </div>
+
+          </div>
+          <div class="mt-7">
+            <p class="font-normal text-sm text-center">From a 30-minute discovery call on a Zoom meeting, we will
+              discuss and then analyze your requirements first before proceeding onto the next steps.
+            </p>
+          </div>
+        </div>
+        <!-- steps-3 -->
+        <div class="">
+          <div class="flex justify-center">
+            <div
+              class="w-32 h-32 border drop-shadow-lg bg-gradient-to-b from-[#005CEA] to-[#00C5FB] rounded-full flex items-center justify-center ">
+              <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+            </div>
+
+          </div>
+          <div class="mt-7">
+            <p class="font-normal text-sm text-center">From a 30-minute discovery call on a Zoom meeting, we will
+              discuss and then analyze your requirements first before proceeding onto the next steps.
+            </p>
+          </div>
+        </div>
+        <!-- steps-4 -->
+        <div class="">
+          <div class="flex justify-center">
+            <div
+              class="w-32 h-32 border drop-shadow-lg bg-gradient-to-t from-[#005CEA] to-[#00C5FB] rounded-full flex items-center justify-center ">
+              <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+            </div>
+
+          </div>
+          <div class="mt-7">
+            <p class="font-normal text-sm text-center">From a 30-minute discovery call on a Zoom meeting, we will
+              discuss and then analyze your requirements first before proceeding onto the next steps.
+            </p>
+          </div>
+        </div>
+        <!-- steps-5 -->
+        <div class="">
+          <div class="flex justify-center">
+            <div
+              class="w-32 h-32 drop-shadow-lg border bg-gradient-to-b from-[#005CEA] to-[#00C5FB] rounded-full flex items-center justify-center ">
+              <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+            </div>
+
+          </div>
+          <div class="mt-7">
+            <p class="font-normal text-sm text-center">From a 30-minute discovery call on a Zoom meeting, we will
+              discuss and then analyze your requirements first before proceeding onto the next steps.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why MonsterBPO? -->
+    <section class="mt-20 bg-[#B7DCFF21]">
+      <h3 class="font-bold text-lg text-center">Why MonsterBPO?</h3>
+      <div class="carousel w-full">
+        <!-- slide-1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="grid lg:grid-cols-4 justify-center items-center w-full">
+            <!-- 1 -->
+            <div class="flex justify-center">
+              <div
+                class="w-44 h-44 border rounded-tr-[30px] rounded-bl-[30px] bg-gradient-to-r from-[#005CEA] to-[#00C5FB] flex items-center justify-center ">
+                <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="flex justify-center">
+              <div
+                class="w-44 h-44 border rounded-tr-[30px] rounded-bl-[30px] bg-gradient-to-r from-[#005CEA] to-[#00C5FB] flex items-center justify-center ">
+                <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="flex justify-center">
+              <div
+                class="w-44 h-44 border rounded-tr-[30px] rounded-bl-[30px] bg-gradient-to-r from-[#005CEA] to-[#00C5FB] flex items-center justify-center ">
+                <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="flex justify-center">
+              <div
+                class="w-44 h-44 border rounded-tr-[30px] rounded-bl-[30px] bg-gradient-to-r from-[#005CEA] to-[#00C5FB] flex items-center justify-center ">
+                <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <!-- slider-2 -->
+         
+         
+        
+      </div>
+    </section>
+    <!-- services -->
+    <section>
+      <h3 class="font-bold text-lg text-center mt-20">Our Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- service-1 -->
+        <div class="bg-[#005CEA] space-y-2 p-5 h-64 grid content-center">
+          <h3 class="font-semibold text-lg text-white text-center">Ad Operations</h3>
+          <p class="font-medium text-sm text-center text-white">
+            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing, and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <div class="flex items-center justify-center gap-2 p-4">
+              <h3 class="font-semibold text-base text-white"> LEARN MORE </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
+                  fill="black" />
+              </svg>
+            </div>
+        </div>
+        <!-- service-2 -->
+        <div class="bg-[#00C5FB] space-y-2 p-5 h-64 grid content-center">
+          <h3 class="font-semibold text-lg text-white text-center">Ad Operations</h3>
+          <p class="font-medium text-sm text-center text-white">
+            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing, and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <div class="flex items-center justify-center gap-2 p-4">
+              <h3 class="font-semibold text-base text-white"> LEARN MORE </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
+                  fill="black" />
+              </svg>
+            </div>
+        </div>
+        <!-- service-3 -->
+        <div class="bg-[#005CEA] space-y-2 p-5 h-64 grid content-center">
+          <h3 class="font-semibold text-lg text-white text-center">Ad Operations</h3>
+          <p class="font-medium text-sm text-center text-white">
+            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing, and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <div class="flex items-center justify-center gap-2 p-4">
+              <h3 class="font-semibold text-base text-white"> LEARN MORE </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
+                  fill="black" />
+              </svg>
+            </div>
+        </div>
+        <!-- service-4 -->
+        <div class="bg-[#00C5FB] space-y-2 p-5 h-64 grid content-center">
+          <h3 class="font-semibold text-lg text-white text-center">Ad Operations</h3>
+          <p class="font-medium text-sm text-center text-white">
+            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing, and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <div class="flex items-center justify-center gap-2 p-4">
+              <h3 class="font-semibold text-base text-white"> LEARN MORE </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
+                  fill="black" />
+              </svg>
+            </div>
+        </div>
+        <!-- service-5 -->
+        <div class="bg-[#005CEA] space-y-2 p-5 h-64 grid content-center">
+          <h3 class="font-semibold text-lg text-white text-center">Ad Operations</h3>
+          <p class="font-medium text-sm text-center text-white">
+            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing, and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <div class="flex items-center justify-center gap-2 p-4">
+              <h3 class="font-semibold text-base text-white"> LEARN MORE </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
+                  fill="black" />
+              </svg>
+            </div>
+        </div>
+        <!-- service-6 -->
+        <div class="bg-[#00C5FB] space-y-2 p-5 h-64 grid content-center">
+          <h3 class="font-semibold text-lg text-white text-center mb-0">Ad Operations</h3>
+          <p class="font-medium text-sm text-center text-white mt-0">
+            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing, and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <div class="flex items-center justify-center gap-2 pt-4">
+              <h3 class="font-semibold text-base text-white"> LEARN MORE </h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                <path
+                  d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
+                  fill="black" />
+              </svg>
+            </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer></footer>
 </body>
 
 </html>
