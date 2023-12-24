@@ -34,13 +34,14 @@
     #menu-toggle:checked+#menu {
       display: block;
     }
+    
   </style>
 
 
 </head>
 
 <body class="font-inter">
-  <header class="w-full bg-gradient-to-b from-[#000] to-[#163C5F]">
+  <header class="w-full bg-gradient-to-b from-[#000] to-[#163C5F] min-h-screen">
     <!-- navbar -->
     <div class="navbar fixed top-0 z-30 w-full px-2 py-4 bg-white shadow-xl shadow-blue-600/20 bg-base-100">
       <div class="navbar-start">
@@ -195,7 +196,7 @@
     </div>
 
     <!-- banner -->
-    <div class="flex flex-col-reverse lg:flex-row justify-around items-center pt-28 min-h-screen ">
+    <div class="flex flex-col-reverse lg:flex-row justify-around items-center pt-28 min-h-[calc(100vh-80px)]">
       <div class="space-y-8 grid gap-4 p-4">
         <div class="space-y-5">
           <h3 class="font-extrabold text-5xl text-white">Trusted Outsourcing with
@@ -221,11 +222,17 @@
         <img src="/images/banner.png" alt="">
       </div>
     </div>
+    <div class="flex items-center justify-center">
+      <a href="#how-we-work" class="animate-bounce hover:animate-none border-none inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white ">
+                <svg width="50px" height="50px" viewBox="-112.64 -112.64 1249.28 1249.28" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="17.408"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000"></path></g></svg>
+            </a>
+    </div>  
   </header>
 
-  <main class="container mx-auto">
+  <main class="container mx-auto ">
+    
     <!-- How we work -->
-    <section class="mt-20 p-3">
+    <section id="how-we-work" class="mt-20 p-3 scroll-m-24">
       <div class="flex items-center justify-center gap-2">
         <h3 class="font-bold text-3xl">How we work </h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
@@ -234,9 +241,9 @@
             fill="black" />
         </svg>
       </div>
-      <p class="font-medium text-base text-[#1c1b1b] text-center">Steps we follow to execute a project</p>
+      <p class="px-4 text-center text-base font-medium text-body-color">Steps we follow to execute a project</p>
       <!-- working steps -->
-      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mt-8">
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mt-14 ">
         <!-- steps-1 -->
         <div class="">
           <div class="flex justify-center">
@@ -260,7 +267,7 @@
           <div class="flex justify-center">
             <div
               class="w-44 h-44 border-collapse hover:border-sky-200 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f] drop-shadow-lg bg-gradient-to-b from-[#005CEA] to-[#00C5FB] rounded-full items-center justify-center relative inline-flex  px-6 py-3 overflow-hidden font-bold text-white shadow-2xl group">
-                <span class="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-t from-[#005CEA] to-[#00C5FB] group-hover:opacity-100"></span>
+                <span class="absolute inset-0 w-full h-full transition duration-500 ease-in opacity-0 bg-gradient-to-t from-[#005CEA] to-[#00C5FB] group-hover:opacity-100"></span>
                
                 
               <h3 class="relative font-bold text-xl text-white text-center ">Requirement Analysis</h3>
@@ -295,7 +302,7 @@
           <div class="flex justify-center">
             <div
               class="w-44 h-44 border drop-shadow-lg bg-gradient-to-b from-[#005CEA] to-[#00C5FB] rounded-full  items-center justify-center px-5 py-2.5 relative group overflow-hidden font-medium bg-purple-50 text-purple-600 inline-flex">
-                <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-gradient-to-t from-[#005CEA] to-[#00C5FB] group-hover:h-full opacity-90"></span>
+                <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-500 ease-in transform translate-y-0 bg-gradient-to-t from-[#005CEA] to-[#00C5FB] group-hover:h-full opacity-90"></span>
                 
               <h3 class="relative font-bold text-xl text-white text-center ">Requirement Analysis</h3>
             </div>
@@ -327,44 +334,75 @@
     <!-- Why MonsterBPO? -->
     <section class="mt-20 bg-[#B7DCFF21] ">
       <h3 class="font-bold text-3xl text-center p-4">Why MonsterBPO?</h3>
-      <div class="carousel w-full py-7">
+      <p class="px-4 text-center text-base font-medium text-body-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio sunt porro sed officiis beatae aspernatur dolorem, error 
+        consequatur quos!</p>
+      <div class="carousel w-full py-7 mt-10">
         <!-- slide-1 -->
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="grid lg:grid-cols-4 justify-center items-center w-full">
+          <d class="grid lg:grid-cols-3 gap-4 justify-center items-center w-full">
             <!-- 1 -->
-            <div class="flex justify-center">
-              <div
-                class="w-44 h-44 border rounded-tr-[30px] rounded-bl-[30px] bg-gradient-to-r from-[#005CEA] to-[#00C5FB] flex items-center justify-center ">
-                <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
-              </div>
-            </div>
+            
             <!-- 2 -->
             <div class="flex justify-center">
-              <div
-                class="w-44 h-44 border rounded-tr-[30px] rounded-bl-[30px] bg-gradient-to-r from-[#005CEA] to-[#00C5FB] flex items-center justify-center ">
-                <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
-              </div>
-            </div>
+          <div
+            class="w-64 h-64 border text-[#00C5FB] hover:text-white rounded-tr-[30px] rounded-bl-[30px] items-center justify-center relative inline-flex overflow-hidden font-bold group ">
+             
+                <span class="absolute inset-0 w-full h-full transition duration-500 ease-in opacity-0 bg-gradient-to-r from-[#005CEA] to-[#00C5FB] group-hover:opacity-100"></span>
+            <h3 class="relative font-bold text-xl text-center ">Requirement Analysis</h3>
+          </div>
+        </div>
             <!-- 3 -->
-            <div class="flex justify-center">
+            <div class="group flex justify-center ">
               <div
-                class="w-44 h-44 border rounded-tr-[30px] rounded-bl-[30px] bg-gradient-to-r from-[#005CEA] to-[#00C5FB] flex items-center justify-center ">
-                <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+                class="w-96 h-96 border shadow-md hover:shadow-xl rounded-tr-[30px] rounded-bl-[30px] items-center justify-center relative inline-flex overflow-hidden font-bold group ">
+                 
+                    <span class="absolute inset-0 w-full  h-full transition duration-500 ease-in opacity-0 bg-gradient-to-r from-[#005CEA] to-[#00C5FB] group-hover:opacity-100"></span>
+                    <div data-aos-delay="300" class="">
+                      <div
+                        class="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-sky-500 group-hover:bg-slate-200 shadow-sky-500/40 group-hover:shadow-slate-300">
+                        <svg viewBox="0 0 55 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black">
+                          <path
+                            d="M8.25 19.25C11.2836 19.25 13.75 16.7836 13.75 13.75C13.75 10.7164 11.2836 8.25 8.25 8.25C5.21641 8.25 2.75 10.7164 2.75 13.75C2.75 16.7836 5.21641 19.25 8.25 19.25ZM46.75 19.25C49.7836 19.25 52.25 16.7836 52.25 13.75C52.25 10.7164 49.7836 8.25 46.75 8.25C43.7164 8.25 41.25 10.7164 41.25 13.75C41.25 16.7836 43.7164 19.25 46.75 19.25ZM49.5 22H44C42.4875 22 41.1211 22.6102 40.1242 23.5984C43.5875 25.4977 46.0453 28.9266 46.5781 33H52.25C53.7711 33 55 31.7711 55 30.25V27.5C55 24.4664 52.5336 22 49.5 22ZM27.5 22C32.8195 22 37.125 17.6945 37.125 12.375C37.125 7.05547 32.8195 2.75 27.5 2.75C22.1805 2.75 17.875 7.05547 17.875 12.375C17.875 17.6945 22.1805 22 27.5 22ZM34.1 24.75H33.3867C31.5992 25.6094 29.6141 26.125 27.5 26.125C25.3859 26.125 23.4094 25.6094 21.6133 24.75H20.9C15.4344 24.75 11 29.1844 11 34.65V37.125C11 39.4023 12.8477 41.25 15.125 41.25H39.875C42.1523 41.25 44 39.4023 44 37.125V34.65C44 29.1844 39.5656 24.75 34.1 24.75ZM14.8758 23.5984C13.8789 22.6102 12.5125 22 11 22H5.5C2.46641 22 0 24.4664 0 27.5V30.25C0 31.7711 1.22891 33 2.75 33H8.41328C8.95469 28.9266 11.4125 25.4977 14.8758 23.5984Z"
+                            fill="black"></path>
+                        </svg>
+                      </div>
+                      <h1 class="relative text-black group-hover:text-white mb-5 pt-2 text-center  text-xl font-bold  lg:px-1">Requirement Analysis</h1>
+                      <p class=" relative px-4 text-center text-base font-medium text-body-color group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet
+                        modi
+                        accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>
+                    </div>
+                
               </div>
             </div>
+          
             <!-- 4 -->
             <div class="flex justify-center">
               <div
-                class="w-44 h-44 border rounded-tr-[30px] rounded-bl-[30px] bg-gradient-to-r from-[#005CEA] to-[#00C5FB] flex items-center justify-center ">
-                <h3 class="font-semibold text-lg text-white text-center ">Requirement Analysis</h3>
+                class="w-96 h-96 shadow-md hover:shadow-xl border rounded-tr-[30px] rounded-bl-[30px] items-center justify-center relative inline-flex overflow-hidden font-bold group ">
+                 
+                    <span class="absolute inset-0 w-full h-full transition duration-500 ease-in opacity-0 bg-gradient-to-r from-[#005CEA] to-[#00C5FB] group-hover:opacity-100"></span>
+                    <div class="relative">
+                      <div class="mb-9 rounded-xl py-8 px-7  transition-all sm:p-9 lg:px-6 xl:px-9">
+                          <div class="mx-auto mb-7 inline-block"><svg width="51" height="60" viewBox="0 0 51 60"
+                                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M33.1015 4.53152C28.1688 2.60657 22.6927 2.60657 17.76 4.53152L3.08781 10.2572V31.4086C3.08781 36.1366 5.05872 40.6505 8.52635 43.8644L24.3812 56.5006C24.9733 57.0494 25.8882 57.0494 26.4802 56.5006L42.3351 43.8644C45.8027 40.6505 47.7736 36.1366 47.7736 31.4086V10.2572L33.1015 4.53152ZM16.6374 1.65499C22.292 -0.551664 28.5695 -0.551662 34.224 1.65499L49.2237 7.50853C50.2113 7.89393 50.8615 8.84554 50.8615 9.90564V31.4086C50.8615 36.9962 48.5322 42.3309 44.4341 46.1291L28.5792 58.7653C26.803 60.4116 24.0585 60.4116 22.2823 58.7653L6.42737 46.1291C2.32926 42.3309 0 36.9962 0 31.4086V9.90564C0 8.84554 0.650144 7.89393 1.63772 7.50853L16.6374 1.65499Z"
+                                      fill="#ABA8F7"></path>
+                                  <path
+                                      d="M25.217 50.5233V8.42143C25.217 7.75383 24.5754 7.27369 23.9349 7.46207L9.15513 11.8091C8.30396 12.0594 7.71946 12.8406 7.71946 13.7278V32.0977C7.71946 34.5312 8.70493 36.861 10.4512 38.5559L23.5206 51.2409C24.1547 51.8564 25.217 51.407 25.217 50.5233Z"
+                                      fill="#6A64F1"></path>
+                              </svg></div>
+                          <div>
+                            <h1 class="relative text-black group-hover:text-white mb-5 pt-2 text-center  text-2xl font-bold  lg:px-1">Requirement Analysis</h1>
+                            <p class=" relative text-center text-base font-medium text-body-color group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure inventore amet
+                              modi
+                              accusantium vero perspiciatis, incidunt dicta sed aspernatur!</p>
+                          </div>
+                      </div>
+                  </div>
+                
               </div>
             </div>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div>
         <!-- slider-2 -->
 
 
@@ -374,58 +412,76 @@
     <!-- services -->
     <section class="p-3">
       <h3 class="font-bold text-3xl text-center mt-20">Our Services</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+      <p class="px-4 text-center text-base font-medium text-body-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio sunt porro sed officiis beatae aspernatur dolorem, error 
+        consequatur quos!</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-14">
         <!-- service-1 -->
-        <div class="bg-[#005CEA] space-y-2 p-5 h-64 grid shadow-lg content-center transform transition duration-500 hover:scale-110">
-          <h3 class="font-bold text-2xl text-white text-center">Ad Operations</h3>
-          <p class="font-medium text-base text-[#E7E7E7]">
-            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing,
-            and ad operations tasks – so you can focus on what’s really important.
-          </p>
-          <a href="" target="_blank"
-            class="group relative overflow-hidden bg-blue-600 focus:ring-4 focus:ring-blue-300 inline-flex items-center px-7 py-2.5 rounded-lg text-white justify-center">
-            <span class="z-40">LEARN MORE</span>
-            <svg class="z-40 ml-2 -mr-1 w-3 h-3 transition-all duration-300 group-hover:translate-x-1"
-              fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <div
-              class="absolute inset-0 h-[200%] w-[200%] rotate-45 translate-x-[-70%] transition-all group-hover:scale-100 bg-white/30 group-hover:translate-x-[50%] z-20 duration-1000">
-            </div>
-          </a>
+        <div class="">
+          <div class="bg-[#005CEA] space-y-2 p-5 h-64 grid shadow-lg content-center transform transition duration-500 hover:scale-105">
+            <h3 class="font-bold text-2xl text-white text-center">Ad Operations</h3>
+            <p class="font-medium text-base text-[#E7E7E7]">
+              Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing,
+              and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <a href="" target="_blank"
+              class="group relative overflow-hidden bg-blue-600 focus:ring-4 focus:ring-blue-300 inline-flex items-center px-7 py-2.5 rounded-lg text-white justify-center">
+              <span class="z-40">LEARN MORE</span>
+              <svg class="z-40 ml-2 -mr-1 w-3 h-3 transition-all duration-300 group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <div
+                class="absolute inset-0 h-[100%] w-[100%] rotate-45 translate-x-[-70%] transition-all group-hover:scale-100 bg-white/30 group-hover:translate-x-[50%] z-20 duration-1000">
+              </div>
+            </a>
+          </div>
         </div>
         <!-- service-2 -->
-        <div class="bg-[#00C5FB] space-y-2 p-5 h-64 grid content-center">
-          <h3 class="font-bold text-2xl text-white text-center">Ad Operations</h3>
-          <p class="font-medium text-base text-[#f3f3f3]">
-            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing,
-            and ad operations tasks – so you can focus on what’s really important.
-          </p>
-          <div class="flex items-center justify-center gap-2 p-4">
-            <h3 class="font-semibold text-base text-white"> LEARN MORE </h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-              <path
-                d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
-                fill="black" />
-            </svg>
+        <div class="">
+          <div class="bg-[#00C5FB] space-y-2 p-5 h-64 grid shadow-lg content-center transform transition duration-500 hover:scale-110">
+            <h3 class="font-bold text-2xl text-white text-center">Ad Operations</h3>
+            <p class="font-medium text-base text-[#E7E7E7]">
+              Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing,
+              and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <a href="" target="_blank"
+              class="group relative overflow-hidden bg-blue-600 focus:ring-4 focus:ring-blue-300 inline-flex items-center px-7 py-2.5 rounded-lg text-white justify-center">
+              <span class="z-40">LEARN MORE</span>
+              <svg class="z-40 ml-2 -mr-1 w-3 h-3 transition-all duration-300 group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <div
+                class="absolute inset-0 h-[100%] w-[100%] rotate-45 translate-x-[-70%] transition-all group-hover:scale-100 bg-white/30 group-hover:translate-x-[50%] z-20 duration-1000">
+              </div>
+            </a>
           </div>
         </div>
         <!-- service-3 -->
-        <div class="bg-[#005CEA] space-y-2 p-5 h-64 grid content-center">
-          <h3 class="font-bold text-2xl text-white text-center">Ad Operations</h3>
-          <p class="font-medium text-base text-[#E7E7E7]">
-            Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing,
-            and ad operations tasks – so you can focus on what’s really important.
-          </p>
-          <div class="flex items-center justify-center gap-2 p-4">
-            <h3 class="font-semibold text-base text-white"> LEARN MORE </h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-              <path
-                d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM0 9H16V7H0L0 9Z"
-                fill="black" />
-            </svg>
+        <div class="">
+          <div class="bg-[#005CEA] space-y-2 p-5 h-64 grid shadow-lg content-center hover:transform hover:transition hover:duration-500 hover:scale-110">
+            <h3 class="font-bold text-2xl text-white text-center">Ad Operations</h3>
+            <p class="font-medium text-base text-[#E7E7E7]">
+              Focused on the details. We use innovative tech and top talent to execute trafficking, reporting, billing,
+              and ad operations tasks – so you can focus on what’s really important.
+            </p>
+            <a href="" target="_blank"
+              class="group relative overflow-hidden bg-blue-600 focus:ring-4 focus:ring-blue-300 inline-flex items-center px-7 py-2.5 rounded-lg text-white justify-center">
+              <span class="z-40">LEARN MORE</span>
+              <svg class="z-40 ml-2 -mr-1 w-3 h-3 transition-all duration-300 group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <div
+                class="absolute inset-0 h-[100%] w-[100%] rotate-45 translate-x-[-70%] transition-all group-hover:scale-100 bg-white/30 group-hover:translate-x-[50%] z-20 duration-1000">
+              </div>
+            </a>
           </div>
         </div>
         <!-- service-4 -->
@@ -522,7 +578,7 @@
       
       <div>
         <select
-          class="btn dropdown btn-ghost text-xl font-medium hover:bg-[#00C5FB] border-none rounded-none text-white bg-[#005CEA] hover:text-black w-full "
+          class="btn dropdown btn-ghost text-xl font-medium hover:bg-gray-100 hover:text-[#00C5FB] border-none rounded-none text-white bg-[#005CEA]  w-full "
           name="starter_company" id="">
           <option value="">Discussion About</option>
           <option value="1">Option 1</option>

@@ -16,6 +16,21 @@
         .font-inter {
           font-family: 'Inter', sans-serif;
         }
+        #spin {
+  
+}
+#spin:after {
+    content:"";
+    animation: spin 10s linear infinite;
+}
+@keyframes spin {
+    0% { content:"Ad Operations";}
+    20% { content:"Operations";}
+    40% { content:"Ad Operations";}
+    60% { content:"Ad";}
+    80% { content:"Ad Operations";}
+    100% { content:"Operations";}
+}
       </style>
 </head>
 <body class="font-inner">
@@ -177,86 +192,334 @@
       </div>
     </div>
     <!-- banner -->
-    <section class="bg-sky-50 mt-20">
-      <div class="container mx-auto">
-        <div class="items-center justify-center flex">
-          <div class="absolute hidden mt-20 md:inline-block top-7 text-transparent stroke-2 stroke-current  opacity-5 bg-clip-text bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-black md:font-extrabold md:text-[7rem] lg:text-[12rem] ">
-            MonsterBPO
-            </span>
-            
-          </div>
+    <section class="mt-20 bg-gradient-to-b from-[#000] to-[#163C5F]">
+      <div class='flex items-center justify-center min-h-[calc(100vh-80px)]'>
+        <div class="">
+            <div class="m-16 ">
+                <div class="flex flex-col  space-y-6 items-center text-center">
+                    <h1 class="font-semibold text-4xl md:text-6xl  text-white tracking-wide ">Hire the <span id="spin" class="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-300 "></span> <br/> expert you need</h1>
+                    <p class="text-gray-400 font-normal md:text-2xl text-xl "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit debitis explicabo rem commodi culpa temporibus quaerat labore vero ipsa.</p>
+                    <a
+            class="group btn w-44 relative overflow-hidden rounded-none border-none bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-medium text-lg text-white">
+            <span class="">Request
+              a Trial</span>
+            <div
+              class="absolute inset-0 h-[200%] w-[200%] rotate-45 translate-x-[-70%] transition-all group-hover:scale-100 bg-white/30 group-hover:translate-x-[50%] z-20 duration-1000">
+            </div>
+          </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="flex gap-5 md:gap-1 flex-col md:flex-row container mx-auto justify-center items-center py-8">
-        <div class="flex-1">
-          <h3 class="text-[#00C5FB] font-extrabold text-center text-8xl">JOIN <br>OUR <br> TEAM</h3>
-        </div>
-        <div class="flex-1 p-4">
-          <hr role="status" class="animate-pulse w-48 h-1 my-4 px-3 bg-gradient-to-r from-[#005CEA] to-[#00C5FB] border-0  dark:bg-gray-700">
-          <p class="text-justify  w-full lg:w-4/5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus voluptate obcaecati iure adipisci quisquam sit neque quasi eaque deleniti et. Aspernatur accusamus vel quod consectetur voluptate laboriosam assumenda magnam voluptas.</p>
-        </div>
-      </div>
-    </section>
+    </div>
+      </section>
   </header>
   <main>
-    <!-- form -->
-    <div class="min-h-screen p-6  flex items-center justify-center">
-        <div class="container max-w-screen-lg mx-auto">
-          <div>
-            <h2 class="font-semibold text-xl text-gray-600">Personal Details</h2>
-            <p class="text-gray-500 mb-6">Please fill out all the fields.</p>
+    <!-- services -->
+    <section class="p-3 container mx-auto mt-10">
+      <div class="mb-16 flex flex-col lg:flex-row items-center justify-center justify-items-center">
+      <div class="">
+          <h3 class=" font-bold text-6xl md:text-7xl">Our Services</h3>
+      </div>
+      <div class="flex-1 mt-5 lg:mt-0">
+          <p class="font-medium text-xl pl-0 lg:pl-10 pr-0 lg:pr-36">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure asperiores porro tempora laborum at voluptates nemo id ea consequuntur eius!</p>
+      </div>
+  </div>
+    
+    <!-- service-1 -->
+    <div class="grid grid-cols-5 gap-3">
+      <div class="order-1 lg:row-span-2">
+        <h3 class="broder text-white h-28 w-24 md:h-32 md:w-36 rounded-xl bg-[#163C5F] font-bold text-4xl flex items-center justify-center">
+          01
+        </h3>
+      </div>
+      <div class="order-3 lg:order-2 col-span-5 lg:col-span-4">
+        <img src="./images/Rectangle 8.png" alt="">
+      </div>
       
-            <div class="flex min-h-screen items-center justify-start shadow-xl bg-white">
-                <div class="mx-auto w-full max-w-3xl py-7">
-                  
-              
-                  <form action="#/submit" class="mt-10">
-              
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> 
-                    <div class="grid gap-6 grid-cols-1 p-4">
-                      <div class="relative z-0">
-                        <input type="text" name="name" class="peer block w-full border mt-1 rounded bg-gray-50 appearance-none border-b border-gray-500 bg-transparent py-2.5 px-2 text-sm text-gray-900 focus:border-[#005CEA] focus:outline-none focus:ring-0" placeholder=" " />
-                        <label class="absolute pl-2 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-7 peer-focus:scale-75 peer-focus:text-[#005CEA] peer-focus:dark:text-[#005CEA]">Your Name</label>
-                      </div>
-                      
-                      <div class="relative z-0">
-                        <input type="text" name="email" class="peer block  border mt-1 rounded  w-full bg-gray-50 appearance-none  border-b border-gray-500 bg-transparent py-2.5 px-2 text-sm text-gray-900 focus:border-[#005CEA] focus:outline-none focus:ring-0" placeholder=" " />
-                        <label class="absolute pl-2 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-7 peer-focus:scale-75 peer-focus:text-[#005CEA] peer-focus:dark:text-[#005CEA]">Your Email</label>
-                      </div>
-                      <div class="relative z-0">
-                        <input type="number" name="Number" class="peer block w-full appearance-none border mt-1 rounded bg-gray-50 border-b border-gray-500 bg-transparent py-2.5 px-2 text-sm text-gray-900 focus:border-[#005CEA] focus:outline-none focus:ring-0" placeholder=" " />
-                        <label class="absolute pl-2 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-7 peer-focus:scale-75 peer-focus:text-[#005CEA] peer-focus:dark:text-[#005CEA] ">Your Phone Number</label>
-                      </div>
-                      <div class="relative z-0">
-                        <input type="text" name="name" class="peer block  border mt-1 rounded  w-full bg-gray-50 appearance-none  border-b border-gray-500 bg-transparent py-2.5 px-2 text-sm text-gray-900 focus:border-[#005CEA] focus:outline-none focus:ring-0" placeholder=" " />
-                        <label class="absolute pl-2 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-7 peer-focus:scale-75 peer-focus:text-[#005CEA] peer-focus:dark:text-[#005CEA]">Website</label>
-                      </div>
-                      
-                      <div class="relative z-0">
-                        <input type="file" name="file" class="peer block  border mt-1 rounded  w-full bg-gray-50 appearance-none  border-b border-gray-500 bg-transparent py-2.5 px-2 text-sm text-gray-900 focus:border-[#005CEA] focus:outline-none focus:ring-0"  placeholder="">
-                        <label class="absolute pl-2 top-3 -z-10 origin-[0]  transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-7 peer-focus:scale-75 peer-focus:text-[#005CEA] peer-focus:dark:text-[#005CEA]">Resume</label>
-                      </div>
-                      <div class="relative z-0 ">
-                        <textarea name="message" rows="5" class="peer block w-full  border mt-1 rounded bg-gray-50 appearance-none  border-b border-gray-500 bg-transparent py-2.5 px-2 text-sm text-gray-900 focus:border-[#005CEA] focus:outline-none focus:ring-0" placeholder=" "></textarea>
-                        <label class="absolute pl-2 top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-7 peer-focus:scale-75 peer-focus:text-[#005CEA] peer-focus:dark:text-[#005CEA]">Your Message</label>
-                      </div>
-                      <div class="relative z-0">
-                        <input type="checkbox" name="billing_same" id="billing_same" class="form-checkbox" />
-                                <label for="billing_same" class="ml-2">checkbox.</label>
-                      </div>
-                    </div>
-                    <button type="submit" class="group w-44 px-10 py-3 mt-5 relative overflow-hidden rounded-none border-none bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-medium text-base md:text-lg text-white"><span class="">Submit</span>
-                      <div
-                        class="absolute inset-0 h-[200%] w-[200%] rotate-45 translate-x-[-70%] transition-all group-hover:scale-100 bg-white/30 group-hover:translate-x-[50%] z-20 duration-1000">
-                      </div></button>
-                  </form>
-                  
-                </div>
-              </div>
-  </main>
-  </body>
-  <!-- footer -->
 
+      <div class="mt-0 lg:mt-8 flex items-center justify-center p-0 lg:pl-3 lg:justify-start order-2 lg:order-3 col-span-4 lg:col-span-2">
+      <h3 class="font-medium text-3xl md:text-6xl">Ad Operations</h3>
+      </div>
+      <div class="mt-8 order-4 col-span-5 lg:col-span-2">
+      <p class="font-medium text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam voluptatem reiciendis repellendus, error sed.</p>
+      </div>
+
+    </div>
+
+
+    <hr class="h-px my-16 bg-gray-400 border-0 dark:bg-gray-700">
+    <!-- service-2 -->
+    <div class="mt-8 grid grid-cols-5 gap-3">
+      
+      <div class="order-3 lg:order-1 col-span-5 lg:col-span-4">
+        <img src="./images/Rectangle 8.png" alt="">
+      </div>
+      
+
+      <div class="mt-0 lg:mt-8 flex items-center justify-center lg:justify-start order-2 lg:order-3 col-span-4 lg:col-span-2">
+      <h3 class="font-medium text-3xl md:text-6xl">Ad Operations</h3>
+      </div>
+      <div class="mt-8 order-4 lg:order-3 col-span-5 lg:col-span-2">
+      <p class="font-medium text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam voluptatem reiciendis repellendus, error sed.</p>
+      </div>
+      <div class="order-1 lg:order-2 lg:row-span-2 grid justify-start lg:justify-end">
+        <h3 class="broder text-white h-28 w-24 md:h-32 md:w-36 rounded-xl bg-[#00C5FB] font-bold text-4xl flex items-center justify-center">
+          02
+        </h3>
+      </div>
+
+    </div>
+
+    <hr class="h-px my-16 bg-gray-400 border-0 dark:bg-gray-700">
+
+    <!-- service-3 -->
+    <div class="grid grid-cols-5 gap-3">
+      <div class="order-1 lg:row-span-2">
+        <h3 class="broder text-white h-28 w-24 md:h-32 md:w-36 rounded-xl bg-[#163C5F] font-bold text-4xl flex items-center justify-center">
+          03
+        </h3>
+      </div>
+      <div class="order-3 lg:order-2 col-span-5 lg:col-span-4">
+        <img src="./images/Rectangle 8.png" alt="">
+      </div>
+      
+
+      <div class="mt-0 lg:mt-8 flex items-center justify-center p-0 lg:pl-3 lg:justify-start order-2 lg:order-3 col-span-4 lg:col-span-2">
+      <h3 class="font-medium text-3xl md:text-6xl">Ad Operations</h3>
+      </div>
+      <div class="mt-8 order-4 col-span-5 lg:col-span-2">
+      <p class="font-medium text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam voluptatem reiciendis repellendus, error sed.</p>
+      </div>
+
+    </div>
+
+
+    <hr class="h-px my-16 bg-gray-400 border-0 dark:bg-gray-700">
+
+    <!-- service-4 -->
+    <div class="mt-8 grid grid-cols-5 gap-3">
+      
+      <div class="order-3 lg:order-1 col-span-5 lg:col-span-4">
+        <img src="./images/Rectangle 8.png" alt="">
+      </div>
+      
+
+      <div class="mt-0 lg:mt-8 flex items-center justify-center lg:justify-start order-2 lg:order-3 col-span-4 lg:col-span-2">
+      <h3 class="font-medium text-3xl md:text-6xl">Ad Operations</h3>
+      </div>
+      <div class="mt-8 order-4 lg:order-3 col-span-5 lg:col-span-2">
+      <p class="font-medium text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam voluptatem reiciendis repellendus, error sed.</p>
+      </div>
+      <div class="order-1 lg:order-2 lg:row-span-2 grid justify-start lg:justify-end">
+        <h3 class="broder h-28 w-24 md:h-32 md:w-36 rounded-xl bg-[#00C5FB] font-bold text-4xl text-white flex items-center justify-center">
+          04
+        </h3>
+      </div>
+
+    </div>
+
+    <hr class="h-px my-16 bg-gray-400 border-0 dark:bg-gray-700">
+
+    <!-- service-5 -->
+    <div class="grid grid-cols-5 gap-3">
+      <div class="order-1 lg:row-span-2">
+        <h3 class="broder text-white h-28 w-24 md:h-32 md:w-36 rounded-xl bg-[#163C5F] font-bold text-4xl flex items-center justify-center">
+          05
+        </h3>
+      </div>
+      <div class="order-3 lg:order-2 col-span-5 lg:col-span-4">
+        <img src="./images/Rectangle 8.png" alt="">
+      </div>
+      
+
+      <div class="mt-0 lg:mt-8 flex items-center justify-center p-0 lg:pl-3 lg:justify-start order-2 lg:order-3 col-span-4 lg:col-span-2">
+      <h3 class="font-medium text-3xl md:text-6xl">Ad Operations</h3>
+      </div>
+      <div class="mt-8 order-4 col-span-5 lg:col-span-2">
+      <p class="font-medium text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam voluptatem reiciendis repellendus, error sed.</p>
+      </div>
+
+    </div>
+
+
+    <hr class="h-px my-16 bg-gray-400 border-0 dark:bg-gray-700">
+
+
+    <!-- service-6 -->
+    <div class="mt-8 grid grid-cols-5 gap-3">
+      
+      <div class="order-3 lg:order-1 col-span-5 lg:col-span-4">
+        <img src="./images/Rectangle 8.png" alt="">
+      </div>
+      
+
+      <div class="mt-0 lg:mt-8 flex items-center justify-center lg:justify-start order-2 lg:order-3 col-span-4 lg:col-span-2">
+      <h3 class="font-medium text-3xl md:text-6xl">Ad Operations</h3>
+      </div>
+      <div class="mt-8 order-4 lg:order-3 col-span-5 lg:col-span-2">
+      <p class="font-medium text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aliquam voluptatem reiciendis repellendus, error sed.</p>
+      </div>
+      <div class="order-1 lg:order-2 lg:row-span-2 grid justify-start lg:justify-end">
+        <h3 class="broder h-28 w-24 md:h-32 md:w-36 rounded-xl bg-[#00C5FB] font-bold text-4xl text-white flex items-center justify-center">
+          06
+        </h3>
+      </div>
+
+    </div>
+
+    <hr class="h-px my-16 bg-gray-400 border-0 dark:bg-gray-700">
+    </section>
+
+
+  <!-- Our capabilities -->
+  <section class=" bg-sky-50">
+   <div class="px-3 py-11 container mx-auto">
+    <div class="space-y-5">
+      <h3 class="font-bold text-6xl">Our capabilities</h3>
+      <p class="w-full md:w-1/2 lg:w-2/5 font-medium text-xl text-body-color text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum omnis esse voluptates? Natus est adipisci quisquam iure tenetur nemo veritatis iste itaque necessitatibus, dolores doloremque eius harum magnam voluptatum aliquid.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2  p-0 lg:pl-96 mt-10 gap-5">
+      <div>
+        <h3 class="font-medium text-4xl pb-4 ">Branding</h3>
+        <ul class="list-disc pl-9 space-y-1">
+          <li class="font-normal text-xl text-body-color">Findings and opportunities</li>
+          <li class="font-normal text-xl text-body-color">Brand strategy</li>
+          <li class="font-normal text-xl text-body-color">Findings and opportunities</li>
+          <li class="font-normal text-xl text-body-color">Brand strategy</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-medium text-4xl pb-4 ">Branding</h3>
+        <ul class="list-disc pl-9 space-y-1">
+          <li class="font-normal text-xl text-body-color">Findings and opportunities</li>
+          <li class="font-normal text-xl text-body-color">Brand strategy</li>
+          <li class="font-normal text-xl text-body-color">Findings and opportunities</li>
+          <li class="font-normal text-xl text-body-color">Brand strategy</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-medium text-4xl pb-4 ">Branding</h3>
+        <ul class="list-disc pl-9 space-y-1">
+          <li class="font-normal text-xl text-body-color">Findings and opportunities</li>
+          <li class="font-normal text-xl text-body-color">Brand strategy</li>
+          <li class="font-normal text-xl text-body-color">Findings and opportunities</li>
+          <li class="font-normal text-xl text-body-color">Brand strategy</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-medium text-4xl pb-4 ">Branding</h3>
+        <ul class="list-disc pl-9 space-y-1">
+          <li class="font-normal text-xl text-body-color">Findings and opportunities</li>
+          <li class="font-normal text-xl text-body-color">Brand strategy</li>
+          <li class="font-normal text-xl text-body-color">Findings and opportunities</li>
+          <li class="font-normal text-xl text-body-color">Brand strategy</li>
+        </ul>
+      </div>
+    </div>
+    <div class="m-10 lg:my-16">
+      <img src="./images/Rectangle 10.png" alt="">
+    </div>
+   </div>
+  </section>
+    <!-- How we deliver results? -->
+    <section class="container p-3 mx-auto mt-10">
+      <h3 class="font-bold text-6xl p-3">How we deliver 
+        <br>results?</h3>
+        <div class="p-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 mt-10">
+          <div>
+            <h3 class="font-medium text-4xl pb-4 ">Global perspective</h3>
+            <p class="font-normal text-xl text-body-color text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident cupiditate molestias, cum quod perferendis quia omnis rerum quam vitae sapiente, libero at voluptas possimus assumenda beatae quis reprehenderit magni.</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-4xl pb-4 ">We’re niche</h3>
+            <p class="font-normal text-xl text-body-color text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident cupiditate molestias, cum quod perferendis quia omnis rerum quam vitae sapiente, libero at voluptas possimus assumenda beatae quis reprehenderit magni.</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-4xl pb-4 ">Global perspective</h3>
+            <p class="font-normal text-xl text-body-color text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident cupiditate molestias, cum quod perferendis quia omnis rerum quam vitae sapiente, libero at voluptas possimus assumenda beatae quis reprehenderit magni.</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-4xl pb-4 ">We’re niche</h3>
+            <p class="font-normal text-xl text-body-color text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident cupiditate molestias, cum quod perferendis quia omnis rerum quam vitae sapiente, libero at voluptas possimus assumenda beatae quis reprehenderit magni.</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-4xl pb-4 ">Holistic approach</h3>
+            <p class="font-normal text-xl text-body-color text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident cupiditate molestias, cum quod perferendis quia omnis rerum quam vitae sapiente, libero at voluptas possimus assumenda beatae quis reprehenderit magni.</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-4xl pb-4 ">Well defined client fit</h3>
+            <p class="font-normal text-xl text-body-color text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore provident cupiditate molestias, cum quod perferendis quia omnis rerum quam vitae sapiente, libero at voluptas possimus assumenda beatae quis reprehenderit magni.</p>
+          </div>
+        </div>
+    </section>
+    
+    
+  </main>
+  <!-- appiontment -->
+  <section class="w-full bg-gradient-to-b from-[#000] to-[#163C5F] mt-20">
+    <h3 class="font-bold text-3xl text-center text-white my-8 pt-4">Book Appointment</h3>
+
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 p-3">
+
+      <div class="h-11">
+        <div class="flex">
+          <span
+            class="inline-flex items-center px-3 text-xl font-semibold text-white bg-[#00C5FB] border  border-gray-300  dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+            </svg>
+          </span>
+          <input type="text" id="website-admin" class=" text-xl font-medium w-full ps-5 p-2.5 "
+            placeholder="Your Name">
+        </div>
+
+      </div>
+      <div>
+
+        <div class="flex">
+
+          <span
+            class="inline-flex items-center px-3 text-xl font-semibold text-white bg-[#00C5FB] border  border-gray-300  dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 20 16">
+              <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+              <path
+                d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+            </svg>
+          </span>
+
+          <input type="text" id="" class="text-xl font-medium w-full ps-5 p-2.5"
+            placeholder="Your E-mail">
+        </div>
+      </div>
+      
+      <div>
+        <select
+          class="btn dropdown btn-ghost text-xl font-medium hover:bg-gray-100 hover:text-[#00C5FB] border-none rounded-none text-white bg-[#005CEA]  w-full "
+          name="starter_company" id="">
+          <option value="">Discussion About</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+      </div>
+
+    </div>
+    <div class="flex justify-center">
+      <button
+        class="btn btn-ghost my-6 hover:bg-[#219ebc] font-bold text-xl text-white bg-[#00C5FB] border-none rounded-none px-7 py-2">Get
+        Appointment
+      </button>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  
   <div class="flex items-end w-full bg-gradient-to-b from-[#000] to-[#163C5F]">
 
     <footer class="w-full text-white ">
@@ -373,4 +636,5 @@
     </footer>
 
   </div>
+  </body>
   </html>
