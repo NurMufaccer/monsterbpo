@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- tailwind link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <style>
+        .font-inter {
+          font-family: 'Inter', sans-serif;
+        }
+        
+      </style>
+</head>
+
+<body class="font-inter">
+  <header>
+    <!-- navbar -->
+    <div class="navbar fixed top-0 z-30 w-full px-2 py-4 bg-white shadow-xl shadow-blue-600/20 bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class=" dropdown-content mt-1 origin-top-left bg-white divide-y divide-gray-100 rounded-md opacity-0 invisible group-hover:opacity-100 z-[1] p-2 shadow bg-base-100 rounded-box w-56">
+            <!-- dropdown Services -->
+            <li>
+              <div class="relative inline-block text-left">
+                <div class="group">
+                  <button type="button"
+                    class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#00C5FB] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                    Services
+                    <!-- Dropdown arrow -->
+                    <svg class="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+                    </svg>
+                  </button>
+
+                  <!-- Dropdown menu -->
+                  <div
+                    class="absolute left-0 w-40 mt-1 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                    <div class="py-1">
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Services 1</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Services 2</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Services 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- dropdown Company -->
+            <li>
+              <div class="text-left">
+                <div class="group">
+                  <button type="button"
+                    class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#00C5FB] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                    Company
+                    <!-- Dropdown arrow -->
+                    <svg class="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+                    </svg>
+                  </button>
+
+                  <!-- Dropdown menu -->
+                  <div
+                    class="absolute left-0 w-40 mt-1 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                    <div class="py-1">
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Company 1</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Company 2</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Company 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li><a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Careers</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Contact</a></li>
+          </ul>
+        </div>
+        <a
+          class="btn btn-ghost inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-extrabold md:font-extrabold text-2xl md:text-4xl">MonsterBPO
+          
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+          <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+
+            <!-- dropdown Services -->
+            <li>
+              <div class="relative inline-block text-left">
+                <div class="group">
+                  <button type="button"
+                    class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#00C5FB] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                    Services
+                    <!-- Dropdown arrow -->
+                    <svg class="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+                    </svg>
+                  </button>
+
+                  <!-- Dropdown menu -->
+                  <div
+                    class="absolute left-0 w-40 mt-1 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                    <div class="py-1">
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Services 1</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Services 2</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Services 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- dropdown Company -->
+            <li>
+              <div class="relative inline-block text-left">
+                <div class="group">
+                  <button type="button"
+                    class="inline-flex justify-center items-center py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#00C5FB] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                    Company
+                    <!-- Dropdown arrow -->
+                    <svg class="w-4 h-4 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+                    </svg>
+                  </button>
+
+                  <!-- Dropdown menu -->
+                  <div
+                    class="absolute left-0 w-40 mt-1 origin-top-left bg-white divide-y divide-gray-100 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+                    <div class="py-1">
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Company 1</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Company 2</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#00C5FB] hover:bg-gray-100">Company 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#00C5FB] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Careers</a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#00C5FB] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <a
+            class="group btn w-24 md:w-44 relative overflow-hidden rounded-none border-none bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-medium text-base md:text-lg text-white">
+            <span class="">Request
+              a Trial</span>
+            <div
+              class="absolute inset-0 h-[200%] w-[200%] rotate-45 translate-x-[-70%] transition-all group-hover:scale-100 bg-white/30 group-hover:translate-x-[50%] z-20 duration-1000">
+            </div>
+          </a>
+      </div>
+    </div>
+    <!-- banner -->
+  <section class="relative">
+    <div class="relative min-h-[calc(100vh-5rem)] w-full">
+        <img src="./images/data.jpg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover filter ">
+        
+    </div>
+    <div class="grid justify-items-center">
+      <div style="background-color: Gray; width:100%; height:100%" class="p-9 grid items-center justify-items-center bg-gradient-to-t from-transparent via-[#163C5F] to-transparent[  opacity-90 absolute bottom-0 z-20 m-0 pb-4 ps-4 ">
+        <div class="border-t-8 border-b-8 py-3 border-[#00C5FB]">
+          <div class="relative group overflow-hidden font-medium">
+           <h3 class="px-3 z-40  font-bold text-5xl text-white text-opacity-100 text-center relative  uppercase">
+            Our Process</h3>
+
+          </div>
+          <div class="relative group overflow-hidden font-medium mt-3 ">
+           <h3 class="px-3 z-40  font-medium text-lg text-opacity-100 text-white text-center relative  uppercase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, tenetur?</h3>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</section>
+
+
+  <!--  -->
+  
+  
+  </header>
+  <main>
+    <section class="p-3 container mx-auto mt-16">
+      <div class="">
+        <div class="text space-y-4">
+            <span class="text-[#163C5F] font-semibold text-2xl border-b-2 border-indigo-600 uppercase">OUR PROCESS</span>
+            <h2 class=" font-bold text-4xl">More Than Just Outsourcing
+            </h2>
+            <h3 class="font-bold text-3xl">Scale. Save. Succeed.</h3>
+            <p>Successful outsourcing engagements rely on the successful implementation of human teams and innovative technologies. That’s why SEBPO emphasizes the importance of understanding client workflows, systems, and communications. We ensure our solution is both seamless and cohesive.
+              </p>
+              <h3 class="font-bold text-3xl">Our Philosophy</h3>
+              <p>Vital to our success is an unwavering commitment to thorough process governance. We believe reliability, transparency, continuous feedback, and consistent delivery create lasting and meaningful collaborations.</p>
+            
+        </div>
+    </div>
+      
+    </section>
+    <section class="mt-16">
+        <div class="grid grid-cols-1 w-full mx-auto">
+            <!-- 1 -->
+            <div class="flex bg-sky-50 ">
+                <div class="w-1/2">
+                    <img class="object-cover w-full" src="./images/data.jpg" alt="">
+                </div>
+                <div class="w-1/2 p-5 grid items-center">
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-3xl ">Implementation Planning</h3>
+                    <p>After an in-depth discovery process with your team, SEBPO customizes your implementation plan. With detailed strategies for efficiently integrating resources and technologies to address both immediate needs and long-term goals, this road map ensures a successful launch and continuous growth.
+                    </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="flex bg-sky-50 ">
+                
+                <div class=" w-1/2 p-5 grid items-center">
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-3xl ">Detailed Documentation</h3>
+                    <p>We keep track of all activities to ensure SEBPO and our clients are aligned and that all documents are current. We know that as our partnership evolves, existing needs change, and new needs will arise; both parties must operate from a singular, accurate source to ensure success.
+                    </p>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <img class="object-cover w-full" src="./images/data.jpg" alt="">
+                </div>
+            </div>
+            <!-- 2 -->
+            
+        </div>
+    </section>
+
+    <!-- component -->
+<section class="py-10 bg-w sm:py-16 lg:py-24 z-40 ">
+
+
+    <div class="container mx-auto">
+        
+
+        <div class="grid grid-cols-1  lg:grid-cols-2">
+            <a href="#" class=" shadow-2xl relative ">
+                <div class="  h-full relative shadow-2xl overflow-hidden group ">
+                    <div class=" absolute -bottom-10 lg:-bottom-16 group-hover:top-0 left-0 w-full h-full group-hover:bg-green-900 transition-all ease-in-out duration-500  ">
+                        <div class="w-full h-full   p-5   relative">
+                            <div class="absolute bottom-0 group-hover:bottom-24 text-white  text-left   transition-all ease-in-out duration-500 ">
+                                <h2 class="text-2xl font-bold  text-white mb-0 pb-1">Detailed Documentation</h2>
+                                <p class="text-lg font-light text-white">We keep track of all activities to ensure SEBPO and our clients are aligned and that all documents are current. We know that as our partnership evolves, existing needs change, and new needs will arise; both parties must operate from a singular, accurate source to ensure success.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/data.jpg" class="w-full z-0  h-full    object-fill example ">
+                </div>
+            </a>
+            <a href="#" class=" shadow-2xl relative ">
+                <div class="  h-full relative shadow-2xl  overflow-hidden group ">
+                    <div class=" absolute -bottom-10 lg:-bottom-20 group-hover:top-0 left-0 w-full h-full group-hover:bg-green-900 transition-all ease-in-out duration-500  ">
+                        <div class="w-full h-full   p-5   relative">
+                            <div class="absolute bottom-0 group-hover:bottom-24 text-white  text-left   transition-all ease-in-out duration-500 ">
+                                <h2 class="text-2xl font-bold  text-white mb-0 pb-1">Implementation Planning</h2>
+                                <p class="text-lg font-light text-white">After an in-depth discovery process with your team, SEBPO customizes your implementation plan. With detailed strategies for efficiently integrating resources and technologies to address both immediate needs and long-term goals, this road map ensures a successful launch and continuous growth
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/data.jpg" class="w-full z-0  h-full    object-fill example ">
+                </div>
+            </a>
+            
+
+
+        </div>
+
+</div></section>
+  </main>
+  
+
+  <section class="w-full bg-gradient-to-b from-[#000] to-[#163C5F] mt-20">
+    <h3 class="font-bold text-3xl text-center text-white my-8 pt-4">Book Appointment</h3>
+
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 p-3">
+
+      <div class="h-11">
+        <div class="flex">
+          <span
+            class="inline-flex items-center px-3 text-xl font-semibold text-white bg-[#00C5FB] border  border-gray-300  dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 20 20">
+              <path
+                d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+            </svg>
+          </span>
+          <input type="text" id="website-admin" class=" text-xl font-medium w-full ps-5 p-2.5 "
+            placeholder="Your Name">
+        </div>
+
+      </div>
+      <div>
+
+        <div class="flex">
+
+          <span
+            class="inline-flex items-center px-3 text-xl font-semibold text-white bg-[#00C5FB] border  border-gray-300  dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 20 16">
+              <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+              <path
+                d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+            </svg>
+          </span>
+
+          <input type="text" id="" class="text-xl font-medium w-full ps-5 p-2.5"
+            placeholder="Your E-mail">
+        </div>
+      </div>
+      
+      <div>
+        <select
+          class="btn dropdown btn-ghost text-xl font-medium hover:bg-gray-100 hover:text-[#00C5FB] border-none rounded-none text-white bg-[#005CEA]  w-full "
+          name="starter_company" id="">
+          <option value="">Discussion About</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+      </div>
+
+    </div>
+    <div class="flex justify-center">
+      <button
+        class="btn btn-ghost my-6 hover:bg-[#219ebc] font-bold text-xl text-white bg-[#00C5FB] border-none rounded-none px-7 py-2">Get
+        Appointment
+      </button>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  
+  <div class="flex items-end w-full bg-gradient-to-b from-[#000] to-[#163C5F]">
+
+    <footer class="w-full text-white ">
+      <div
+        class="container flex flex-col flex-wrap md:justify-center gap-5 px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+        <div class="grid content-center justify-center flex-shrink-0 w-64 mx-auto text-center md:mx-0 ">
+          <a
+            class="btn btn-ghost inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#005CEA] to-[#00C5FB] font-bold text-3xl">MonsterBPO</a>
+          <p class="mt-2 text-sm text-[#CFCFCF]">Design, Code and Ship!</p>
+          <div class="mt-4">
+            <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+              <a target="_blank" class="text-gray-500 cursor-pointer hover:text-[#316FF6]" href="#" title="">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a target="_blank" class="ml-3 text-gray-500 cursor-pointer hover:text-[#1DA1F2]" href="#" title="">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a target="_blank" class="ml-3 text-gray-500 cursor-pointer hover:text-[#fa7e1e]" href="#" title="">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a target="_blank" class="ml-3 text-gray-500 cursor-pointer hover:text-[#0077b5]" href="#" title="">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                  </path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+
+            </span>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 flex-grow justify-around mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+          <div class="w-full px-4 ">
+            <h2 class="mb-3 text-lg font-bold tracking-widest text-white uppercase">QUICK LINKS</h2>
+            <nav class="mb-10 list-none">
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Services</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Contact</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Careers</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">About Us</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Our Gallery</a>
+              </li>
+            </nav>
+          </div>
+          <div class="w-full px-4 ">
+            <h2 class="mb-3 text-lg font-bold tracking-widest text-white uppercase">Services</h2>
+            <nav class="mb-10 list-none">
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Ad Operations</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Back-Office Services</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Content Moderation</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Data Entry</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">Tagging & Categorization
+                </a>
+              </li>
+            </nav>
+          </div>
+
+          <div class="w-full #CFCFCF">
+            <h2 class=" mb-3 text-lg font-bold tracking-widest text-white uppercase">Contact Info</h2>
+            <nav class="mb-10 list-none">
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">House:30, Road: 19,
+                  <br>Block-D, Mirpur-11, Dhaka-1216, <br>Bangladesh.
+                </a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">+2(305) 587-3407</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-[#CFCFCF] cursor-pointer hover:text-gray-500">info@example.com</a>
+              </li>
+
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#000]">
+        <div class="container px-5 py-4 mx-auto w-full">
+          <p class="text-sm text-[#CFCFCF] capitalize text-center">© 2020 All rights reserved </p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+  </html>
