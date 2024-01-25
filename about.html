@@ -12,6 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <style>
         .font-inter {
           font-family: 'Inter', sans-serif;
@@ -175,13 +183,10 @@
       </div>
     </div>
     <!-- banner -->
-  <section class="relative">
-    <div class="relative min-h-[calc(100vh-5rem)] w-full">
-        <img src="./images/data.jpg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover filter ">
-        
-    </div>
+  <section class="relative min-h-[calc(100vh-10rem)] mt-16">
+    
     <div class="grid justify-items-center">
-      <div style="background-color: Gray; width:100%; height:100%" class="p-9 grid items-center justify-items-center bg-gradient-to-t from-transparent via-[#163C5F] to-transparent[  opacity-90 absolute bottom-0 z-20 m-0 pb-4 ps-4 ">
+      <div style="background-color: Gray; width:100%; height:100%" class="p-9 grid items-center justify-items-center absolute bg-gradient-to-b from-[#000] to-[#163C5F] bottom-0 z-20 m-0 pb-4 ps-4 ">
         <div class="border-t-8 border-b-8 py-3 border-[#00C5FB]">
           <div class="relative group overflow-hidden font-medium">
            <h3 class="px-3 z-40  font-bold text-5xl text-white text-opacity-100 text-center relative  uppercase">About us</h3>
@@ -204,18 +209,15 @@
   </header>
   <main>
     <section class="p-3 container mx-auto mt-10">
-      <div class="flex ">
-        <div class="text flex-1">
-            <span class="text-gray-500 border-b-2 border-indigo-600 uppercase">About us</span>
-            <h2 class="my-4 font-bold text-3xl  sm:text-4xl ">About <span class="text-indigo-600">Our Company</span>
+      <div class="grid grid-cols-1 lg:grid-cols-3 items-center justify-center ">
+        <div class="text col-span-1">
+            <h2 class="my-4 font-bold text-4xl text-center lg:text-start ">About <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#005CEA] to-[#00C5FB]">Our Company</span>
             </h2>
             
         </div>
-        <div class="flex-1 items-center max-w-screen-xl">
-          <p class="text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, commodi
-            doloremque, fugiat illum magni minus nisi nulla numquam obcaecati placeat quia, repellat tempore
-            voluptatum.
+        <div class="col-span-1 lg:col-span-2 items-center max-w-screen-xl text-center lg:text-start pl-4 lg:pl-16">
+          <p class="font-medium text-base ">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque nostrum nisi a laboriosam voluptates cupiditate, ea veniam saepe ratione quo animi maxime voluptas aut quam accusantium impedit non accusamus debitis eos fugit distinctio? Magni ea ratione quaerat obcaecati, nobis itaque debitis nihil totam nulla asperiores odio officia et cupiditate!
         </p>
           
       </div>
@@ -224,15 +226,15 @@
     </section>
 
 <!-- Why Choose MonsterBPO? -->
-    <section class=" container mx-auto">
+    <section class="mt-16 container mx-auto">
       <div class="py-7 space-y-3">
-        <h3 class="text-4xl font-semibold">Why Choose MonsterBPO?</h3>
-        <p class="w-3/4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quasi. Veritatis expedita corrupti dolor autem totam? Earum impedit repellendus, similique, eius numquam hic repudiandae, expedita explicabo tempore molestias ducimus alias.
+        <h3 class="text-4xl font-bold text-center">Why Choose MonsterBPO?</h3>
+        <p class="w-9/12 mx-auto text-center font-medium text-base ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quasi. Veritatis expedita corrupti dolor autem totam? Earum impedit repellendus, similique, eius numquam hic repudiandae, expedita explicabo tempore molestias ducimus alias.
 
         </p>
       </div>
       <div>
-        <div class="flex">
+        <div class="flex flex-col-reverse lg:flex-row p-3">
           <div class="flex-1 grid grid-cols-1 ">
             <!-- 1 -->
             
@@ -276,127 +278,21 @@
         </div>
       </div>
     </section>
-<!-- Why Choose MonsterBPO? -->
-    <section class="mt-20 container mx-auto">
-      <div class="py-7 space-y-3">
-        <h3 class="text-4xl font-semibold text-center">Why Choose MonsterBPO?</h3>
-        <p class="w-9/12 mx-auto text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quasi. Veritatis expedita corrupti dolor autem totam? Earum impedit repellendus, similique, eius numquam hic repudiandae, expedita explicabo tempore molestias ducimus alias.
-
-        </p>
-      </div>
-      <div>
-        <div class="flex">
-          <div class="flex-1 grid grid-cols-1 ">
-            <!-- 1 -->
-            
-          <!-- 2 -->
-          <div class="block p-2">
-            <span class="inline-block rounded-lg p-3">
-                <div class="inline-flex align-middle justify-center items-center select-none">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="32" width="32">
-                      <path d="M7.55556 4.22222C7.55556 2.99492 8.55048 2 9.77778 2C11.0051 2 12 2.99492 12 4.22222V5.44444C12 5.99673 12.4477 6.44444 13 6.44444H16.5556C17.1078 6.44444 17.5556 6.89216 17.5556 7.44444V11C17.5556 11.5523 18.0033 12 18.5556 12H19.7778C21.0051 12 22 12.9949 22 14.2222C22 15.4496 21.0051 16.4444 19.7778 16.4444H18.5556C18.0033 16.4444 17.5556 16.8922 17.5556 17.4444V21C17.5556 21.5523 17.1078 22 16.5556 22H13C12.4477 22 12 21.5523 12 21V19.7778C12 18.5504 11.0051 17.5556 9.77778 17.5556C8.55048 17.5556 7.55556 18.5504 7.55556 19.7778V21C7.55556 21.5523 7.10784 22 6.55556 22H3C2.44772 22 2 21.5523 2 21V17.4444C2 16.8922 2.44772 16.4444 3 16.4444H4.22222C5.44952 16.4444 6.44444 15.4496 6.44444 14.2222C6.44444 12.9949 5.44952 12 4.22222 12H3C2.44772 12 2 11.5523 2 11V7.44444C2 6.89216 2.44772 6.44444 3 6.44444H6.55556C7.10784 6.44444 7.55556 5.99673 7.55556 5.44444V4.22222Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
-                   </svg>
-                </div>
-            </span>
-            <h2 class="mt-2 font-semibold text-base sm:text-lg ">
-                Lorem, ipsum.
-            </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sint, suscipit asperiores reiciendis incidunt eius tenetur quos repudiandae cupiditate maiores!
-            </p>
-        </div>
-          <!-- 3 -->
-          <div class="block p-2">
-            <span class="inline-block rounded-lg p-3">
-                <div class="inline-flex align-middle justify-center items-center select-none">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="32" width="32">
-                      <path d="M7.55556 4.22222C7.55556 2.99492 8.55048 2 9.77778 2C11.0051 2 12 2.99492 12 4.22222V5.44444C12 5.99673 12.4477 6.44444 13 6.44444H16.5556C17.1078 6.44444 17.5556 6.89216 17.5556 7.44444V11C17.5556 11.5523 18.0033 12 18.5556 12H19.7778C21.0051 12 22 12.9949 22 14.2222C22 15.4496 21.0051 16.4444 19.7778 16.4444H18.5556C18.0033 16.4444 17.5556 16.8922 17.5556 17.4444V21C17.5556 21.5523 17.1078 22 16.5556 22H13C12.4477 22 12 21.5523 12 21V19.7778C12 18.5504 11.0051 17.5556 9.77778 17.5556C8.55048 17.5556 7.55556 18.5504 7.55556 19.7778V21C7.55556 21.5523 7.10784 22 6.55556 22H3C2.44772 22 2 21.5523 2 21V17.4444C2 16.8922 2.44772 16.4444 3 16.4444H4.22222C5.44952 16.4444 6.44444 15.4496 6.44444 14.2222C6.44444 12.9949 5.44952 12 4.22222 12H3C2.44772 12 2 11.5523 2 11V7.44444C2 6.89216 2.44772 6.44444 3 6.44444H6.55556C7.10784 6.44444 7.55556 5.99673 7.55556 5.44444V4.22222Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
-                   </svg>
-                </div>
-            </span>
-            <h2 class="mt-2 font-semibold text-base sm:text-lg ">
-                Lorem, ipsum.
-            </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sint, suscipit asperiores reiciendis incidunt eius tenetur quos repudiandae cupiditate maiores!
-            </p>
-        </div>
-          </div>
-          <div class="flex-1">
-            
-            <div class="">
-              <img class="object-cover" src="./images/Rectangle 8.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Our Values -->
-    <section class="mt-20 container mx-auto">
-      <div class="py-7 grid justify-items-end space-y-3">
-        <h3 class="text-5xl font-semibold">Our Values</h3>
-        <p class="w-3/4 text-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quasi. Veritatis expedita corrupti dolor autem totam? Earum impedit repellendus, similique, eius numquam hic repudiandae, expedita explicabo tempore molestias ducimus alias.
-
-        </p>
-      </div>
-      <div>
-        <div class="flex">
-          <div class="flex-1">
-            
-            <div class="">
-              <img class="object-cover" src="./images/Rectangle 8.png" alt="">
-            </div>
-          </div>
-          <div class="flex-1 grid grid-cols-1 ">
-            <!-- 1 -->
-            
-          <!-- 2 -->
-          <div class="block p-2">
-            <span class="inline-block rounded-lg p-3">
-                <div class="inline-flex align-middle justify-center items-center select-none">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="32" width="32">
-                      <path d="M7.55556 4.22222C7.55556 2.99492 8.55048 2 9.77778 2C11.0051 2 12 2.99492 12 4.22222V5.44444C12 5.99673 12.4477 6.44444 13 6.44444H16.5556C17.1078 6.44444 17.5556 6.89216 17.5556 7.44444V11C17.5556 11.5523 18.0033 12 18.5556 12H19.7778C21.0051 12 22 12.9949 22 14.2222C22 15.4496 21.0051 16.4444 19.7778 16.4444H18.5556C18.0033 16.4444 17.5556 16.8922 17.5556 17.4444V21C17.5556 21.5523 17.1078 22 16.5556 22H13C12.4477 22 12 21.5523 12 21V19.7778C12 18.5504 11.0051 17.5556 9.77778 17.5556C8.55048 17.5556 7.55556 18.5504 7.55556 19.7778V21C7.55556 21.5523 7.10784 22 6.55556 22H3C2.44772 22 2 21.5523 2 21V17.4444C2 16.8922 2.44772 16.4444 3 16.4444H4.22222C5.44952 16.4444 6.44444 15.4496 6.44444 14.2222C6.44444 12.9949 5.44952 12 4.22222 12H3C2.44772 12 2 11.5523 2 11V7.44444C2 6.89216 2.44772 6.44444 3 6.44444H6.55556C7.10784 6.44444 7.55556 5.99673 7.55556 5.44444V4.22222Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
-                   </svg>
-                </div>
-            </span>
-            <h2 class="mt-2 font-semibold text-base sm:text-lg ">
-                Lorem, ipsum.
-            </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sint, suscipit asperiores reiciendis incidunt eius tenetur quos repudiandae cupiditate maiores!
-            </p>
-        </div>
-          <!-- 3 -->
-          <div class="block p-2">
-            <span class="inline-block rounded-lg p-3">
-                <div class="inline-flex align-middle justify-center items-center select-none">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="32" width="32">
-                      <path d="M7.55556 4.22222C7.55556 2.99492 8.55048 2 9.77778 2C11.0051 2 12 2.99492 12 4.22222V5.44444C12 5.99673 12.4477 6.44444 13 6.44444H16.5556C17.1078 6.44444 17.5556 6.89216 17.5556 7.44444V11C17.5556 11.5523 18.0033 12 18.5556 12H19.7778C21.0051 12 22 12.9949 22 14.2222C22 15.4496 21.0051 16.4444 19.7778 16.4444H18.5556C18.0033 16.4444 17.5556 16.8922 17.5556 17.4444V21C17.5556 21.5523 17.1078 22 16.5556 22H13C12.4477 22 12 21.5523 12 21V19.7778C12 18.5504 11.0051 17.5556 9.77778 17.5556C8.55048 17.5556 7.55556 18.5504 7.55556 19.7778V21C7.55556 21.5523 7.10784 22 6.55556 22H3C2.44772 22 2 21.5523 2 21V17.4444C2 16.8922 2.44772 16.4444 3 16.4444H4.22222C5.44952 16.4444 6.44444 15.4496 6.44444 14.2222C6.44444 12.9949 5.44952 12 4.22222 12H3C2.44772 12 2 11.5523 2 11V7.44444C2 6.89216 2.44772 6.44444 3 6.44444H6.55556C7.10784 6.44444 7.55556 5.99673 7.55556 5.44444V4.22222Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
-                   </svg>
-                </div>
-            </span>
-            <h2 class="mt-2 font-semibold text-base sm:text-lg ">
-                Lorem, ipsum.
-            </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sint, suscipit asperiores reiciendis incidunt eius tenetur quos repudiandae cupiditate maiores!
-            </p>
-        </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
+    
     <!-- our values -->
-    <section class="mt-20 container mx-auto">
+    <section class="mt-16 container mx-auto">
       <div class="py-7 space-y-3">
-        <h3 class="text-4xl font-semibold text-center">Our Values</h3>
-        <p class="w-9/12 mx-auto text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quasi. Veritatis expedita corrupti dolor autem totam? Earum impedit repellendus, similique, eius numquam hic repudiandae, expedita explicabo tempore molestias ducimus alias.
+        <h3 class="text-4xl font-bold text-center">Our Values</h3>
+        <p class="w-9/12 mx-auto text-center font-medium text-base ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, quasi. Veritatis expedita corrupti dolor autem totam? Earum impedit repellendus, similique, eius numquam hic repudiandae, expedita explicabo tempore molestias ducimus alias.
 
         </p>
       </div>
       <div>
-        <div class="flex">
+        <div class="flex flex-col lg:flex-row gap-3 p-3">
           <div class="flex-1">
             
             <div class="">
-              <img class="object-cover" src="./images/Rectangle 8.png" alt="">
+              <img class="w-full h-full object-cover" src="./images/Rectangle 8.png" alt="">
             </div>
           </div>
           <div class="flex-1 grid grid-cols-1 ">
@@ -438,56 +334,485 @@
       </div>
     </section>
     
-
-    <!-- our values -->
-    <section class="mt-20 container mx-auto">
-      <div class="flex gap-3">
-        <div class="flex-1 grid items-center"> 
-        <div class=" ">
-          <img class="object-cover" src="./images/Rectangle 8.png" alt="">
+<!--  -->
+<section class="relative mt-16  bg-blueGray-50">
+<div class="relative pt-12 pb-32 flex content-center items-center justify-center min-h-[calc(100vh-20rem)]">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
+            background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80');
+          ">
+          <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
         </div>
-        </div>
-        <div class="flex-1">
-          <h3 class="text-4xl font-semibold ">Our Values</h3>
-          <div class=" grid grid-cols-1 ">
-            <!-- 1 -->
-            
-          <!-- 2 -->
-          <div class="block p-2">
-            <span class="inline-block rounded-lg p-3">
-                <div class="inline-flex align-middle justify-center items-center select-none">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="32" width="32">
-                      <path d="M7.55556 4.22222C7.55556 2.99492 8.55048 2 9.77778 2C11.0051 2 12 2.99492 12 4.22222V5.44444C12 5.99673 12.4477 6.44444 13 6.44444H16.5556C17.1078 6.44444 17.5556 6.89216 17.5556 7.44444V11C17.5556 11.5523 18.0033 12 18.5556 12H19.7778C21.0051 12 22 12.9949 22 14.2222C22 15.4496 21.0051 16.4444 19.7778 16.4444H18.5556C18.0033 16.4444 17.5556 16.8922 17.5556 17.4444V21C17.5556 21.5523 17.1078 22 16.5556 22H13C12.4477 22 12 21.5523 12 21V19.7778C12 18.5504 11.0051 17.5556 9.77778 17.5556C8.55048 17.5556 7.55556 18.5504 7.55556 19.7778V21C7.55556 21.5523 7.10784 22 6.55556 22H3C2.44772 22 2 21.5523 2 21V17.4444C2 16.8922 2.44772 16.4444 3 16.4444H4.22222C5.44952 16.4444 6.44444 15.4496 6.44444 14.2222C6.44444 12.9949 5.44952 12 4.22222 12H3C2.44772 12 2 11.5523 2 11V7.44444C2 6.89216 2.44772 6.44444 3 6.44444H6.55556C7.10784 6.44444 7.55556 5.99673 7.55556 5.44444V4.22222Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
-                   </svg>
-                </div>
-            </span>
-            <h2 class="mt-2 font-semibold text-base sm:text-lg ">
-                Lorem, ipsum.
-            </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sint, suscipit asperiores reiciendis incidunt eius tenetur quos repudiandae cupiditate maiores!
-            </p>
-        </div>
-          <!-- 3 -->
-          <div class="block p-2">
-            <span class="inline-block rounded-lg p-3">
-                <div class="inline-flex align-middle justify-center items-center select-none">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="32" width="32">
-                      <path d="M7.55556 4.22222C7.55556 2.99492 8.55048 2 9.77778 2C11.0051 2 12 2.99492 12 4.22222V5.44444C12 5.99673 12.4477 6.44444 13 6.44444H16.5556C17.1078 6.44444 17.5556 6.89216 17.5556 7.44444V11C17.5556 11.5523 18.0033 12 18.5556 12H19.7778C21.0051 12 22 12.9949 22 14.2222C22 15.4496 21.0051 16.4444 19.7778 16.4444H18.5556C18.0033 16.4444 17.5556 16.8922 17.5556 17.4444V21C17.5556 21.5523 17.1078 22 16.5556 22H13C12.4477 22 12 21.5523 12 21V19.7778C12 18.5504 11.0051 17.5556 9.77778 17.5556C8.55048 17.5556 7.55556 18.5504 7.55556 19.7778V21C7.55556 21.5523 7.10784 22 6.55556 22H3C2.44772 22 2 21.5523 2 21V17.4444C2 16.8922 2.44772 16.4444 3 16.4444H4.22222C5.44952 16.4444 6.44444 15.4496 6.44444 14.2222C6.44444 12.9949 5.44952 12 4.22222 12H3C2.44772 12 2 11.5523 2 11V7.44444C2 6.89216 2.44772 6.44444 3 6.44444H6.55556C7.10784 6.44444 7.55556 5.99673 7.55556 5.44444V4.22222Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
-                   </svg>
-                </div>
-            </span>
-            <h2 class="mt-2 font-semibold text-base sm:text-lg ">
-                Lorem, ipsum.
-            </h2>
-            <p class="sm:mt-1 block text-sm sm:text-base"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sint, suscipit asperiores reiciendis incidunt eius tenetur quos repudiandae cupiditate maiores!
-            </p>
-        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1 class="text-white font-semibold text-5xl">
+                  Your story starts with us.
+                </h1>
+                <p class="mt-4 text-lg text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint fuga eveniet aut distinctio quaerat similique harum possimus! Voluptas, quod!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px" style="transform: translateZ(0px)">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
       </div>
+      <section class="pb-10 bg-blueGray-200 -mt-24">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Awarded</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    Divide details about your product or agency work into parts.
+                    A paragraph describing a feature will be enough.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-yellow-400">
+                    <i class="fas fa-retweet"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Free Revisions</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    Keep you user engaged by providing meaningful information.
+                    Remember that by this time, the user is curious.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
+                    <i class="fas fa-fingerprint"></i>
+                  </div>
+                  <h6 class="text-xl font-semibold">Verified Company</h6>
+                  <p class="mt-2 mb-4 text-blueGray-500">
+                    Write a few lines about each one. A paragraph describing a
+                    feature will be enough. Keep you user engaged!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      </section>
+
+   <!-- our team -->
+   <section class="mt-10 container mx-auto px-3">
+    <div class="space-y-4">
+      <h3 class="font-bold text-4xl text-center">Our Team</h3>
+      <p class="border-l-4 border-[#00C5FB] pl-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eos et minima harum magni. Eius eligendi sed voluptas dolore vero? Molestiae impedit eos eligendi ipsum sit sint atque temporibus exercitationem.
+
+      </p>
+    </div>
+    <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center justify-items-center mt-8">
+      <!-- profile-1 -->
+      <div class="group relative w-72 h-96 bg-gradient-to-b from-[#00C5FB] from-30% to-[#163C5F] to-30% rounded-2xl overflow-hidden">
+        <div class=" top-0 left-0 w-full h-full rounded-2xl overflow-hidden transform duration-500 z-50 origin-top group-hover:translate-y-7 group-hover:scale-50 delay-100">
+          <img class=" top-0 left-0 w-full h-full object-cover" src="./images/joker_.jpg" alt="">
+        </div>
+        <!-- detail -->
+        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-end pb-7 transform translate-y-36 group-hover:translate-y-0 duration-500 delay-100">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold text-xl text-white text-center pb-3">Kamala Kanta<br>
+              <span class="font-medium text-lg text-[#00C5FB] text-center">The Joker</span>
+            </h3>
+            <!-- social -->
+            <ul class="flex items-center gap-2">
+              <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-200 group-hover:opacity-100">
+                <a target="_blank" href="#" class="">
+                  <button id="facebook" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-600 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            </li>
+            <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-300 group-hover:opacity-100">
+              <a target="_blank" class="" href="#" title="">
+                <button id="instagram" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-gradient-to-b from-indigo-600 via-pink-600 to-yellow-500 text-white">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </svg>
+            </a>
+          </li>
+          <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-[400ms] group-hover:opacity-100">
+            <a target="_blank" class="" href="#" title="">
+              <button id="twitter" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-400 text-white">
+                <i class="fab fa-twitter"></i>
+              </button>
+          </a>
+        </li>
+        <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-500 group-hover:opacity-100">
+          <a target="_blank" class="" href="#" title="">
+            <button id="linkedin" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-500 text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+        </a>
+      </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <!-- profile-2 -->
+      <div class="group relative w-72 h-96 bg-gradient-to-b from-[#00C5FB] from-30% to-[#163C5F] to-30% rounded-2xl overflow-hidden">
+        <div class=" top-0 left-0 w-full h-full rounded-2xl overflow-hidden transform duration-500 z-50 origin-top group-hover:translate-y-7 group-hover:scale-50 delay-100">
+          <img class=" top-0 left-0 w-full h-full object-cover" src="./images/j.deep.jpg" alt="">
+        </div>
+        <!-- detail -->
+        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-end pb-7 transform translate-y-36 group-hover:translate-y-0 duration-500 delay-100">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold text-xl text-white text-center pb-3">Kuber <br>
+              <span class="font-medium text-lg text-[#00C5FB] text-center">The Sailor</span>
+            </h3>
+            <!-- social -->
+            <ul class="flex items-center gap-2">
+              <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-200 group-hover:opacity-100">
+                <a target="_blank" href="#" class="">
+                  <button id="facebook" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-600 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            </li>
+            <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-300 group-hover:opacity-100">
+              <a target="_blank" class="" href="#" title="">
+                <button id="instagram" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-gradient-to-b from-indigo-600 via-pink-600 to-yellow-500 text-white">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </svg>
+            </a>
+          </li>
+          <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-[400ms] group-hover:opacity-100">
+            <a target="_blank" class="" href="#" title="">
+              <button id="twitter" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-400 text-white">
+                <i class="fab fa-twitter"></i>
+              </button>
+          </a>
+        </li>
+        <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-500 group-hover:opacity-100">
+          <a target="_blank" class="" href="#" title="">
+            <button id="linkedin" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-500 text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+        </a>
+      </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <!-- profile-3 -->
+      <div class="group relative w-72 h-96 rounded-xl overflow-hidden">
+        <div class="absolute w-full h-full">
+          <img class="absolute w-full h-full object-cover" src="./images/hulk.jpg" alt="">
+        </div>
+        <!-- detail -->
+        <div class="absolute -bottom-32 w-full h-32 flex justify-center items-center backdrop-filter backdrop-blur-lg shadow-lg border-2 border-[#e1ffe11a] rounded-xl p-4 group-hover:bottom-0 transition group-hover:delay-0  ">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold text-2xl text-white text-center pb-3 transform transition delay-200 duration-300 opacity-0 group-hover:opacity-100 -translate-y-5 group-hover:translate-y-0">Himu<br>
+              <span class="font-medium text-lg text-white text-center">The Hulk</span>
+            </h3>
+            <!-- social -->
+            <ul class="flex items-center gap-2">
+              <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-100 group-hover:opacity-100">
+                <a target="_blank" href="#" class="">
+                  <button id="facebook" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-600 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            </li>
+            <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-150 group-hover:opacity-100">
+              <a target="_blank" class="" href="#" title="">
+                <button id="instagram" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-gradient-to-b from-indigo-600 via-pink-600 to-yellow-500 text-white">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </svg>
+            </a>
+          </li>
+          <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-200 group-hover:opacity-100">
+            <a target="_blank" class="" href="#" title="">
+              <button id="twitter" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-400 text-white">
+                <i class="fab fa-twitter"></i>
+              </button>
+          </a>
+        </li>
+        <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-300 group-hover:opacity-100">
+          <a target="_blank" class="" href="#" title="">
+            <button id="linkedin" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-500 text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+        </a>
+      </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <!-- profile-4 -->
+      <div class="group relative w-72 h-96 rounded-xl overflow-hidden">
+        <div class="absolute w-full h-full">
+          <img class="absolute w-full h-full object-cover" src="./images/tom.h.jpg" alt="">
+        </div>
+        <!-- detail -->
+        <div class="absolute -bottom-32 w-full h-32 flex justify-center items-center backdrop-filter backdrop-blur-lg shadow-lg border-2 border-[#e1ffe11a] rounded-xl p-4 group-hover:bottom-0 transition group-hover:delay-0  ">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold text-2xl text-white text-center pb-3 transform transition delay-200 duration-300 opacity-0 group-hover:opacity-100 -translate-y-5 group-hover:translate-y-0">Mantu Mia<br>
+              <span class="font-medium text-lg text-white text-center">The Spider-Man</span>
+            </h3>
+            <!-- social -->
+            <ul class="flex items-center gap-2">
+              <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-100 group-hover:opacity-100">
+                <a target="_blank" href="#" class="">
+                  <button id="facebook" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-600 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            </li>
+            <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-150 group-hover:opacity-100">
+              <a target="_blank" class="" href="#" title="">
+                <button id="instagram" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-gradient-to-b from-indigo-600 via-pink-600 to-yellow-500 text-white">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </svg>
+            </a>
+          </li>
+          <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-200 group-hover:opacity-100">
+            <a target="_blank" class="" href="#" title="">
+              <button id="twitter" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-400 text-white">
+                <i class="fab fa-twitter"></i>
+              </button>
+          </a>
+        </li>
+        <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-300 group-hover:opacity-100">
+          <a target="_blank" class="" href="#" title="">
+            <button id="linkedin" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-500 text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+        </a>
+      </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+   </section>
+
+    <!-- our team-2 -->
+    <section class="mt-16 container mx-auto px-3">
+    <div class="flex flex-col lg:flex-row">
+      <div class="flex-1 space-y-4 px-10 pt-12">
+      <h3 class="font-bold text-4xl">Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#005CEA] to-[#00C5FB]">Team</span></h3>
+      <p class="border-l-4 border-[#00C5FB] pl-4 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde qui ad asperiores, facilis nobis similique praesentium, minus officiis quasi eligendi quod consequatur aperiam architecto! Architecto animi, fugit sunt recusandae molestiae ex, voluptatum adipisci at natus quae ad officiis veniam soluta quo necessitatibus rerum quidem placeat accusamus dolor! Repellat, officiis saepe.
+      </p>
+    </div>
+    <!-- profile -->
+    <div class="flex-1 relative grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center justify-items-center mt-8">
+      <!-- profile-1 -->
+      <div class="group relative w-72 h-96 bg-gradient-to-b from-[#00C5FB] from-30% to-[#163C5F] to-30% rounded-2xl overflow-hidden">
+        <div class=" top-0 left-0 w-full h-full rounded-2xl overflow-hidden transform duration-500 z-50 origin-top group-hover:translate-y-7 group-hover:scale-50 delay-100">
+          <img class=" top-0 left-0 w-full h-full object-cover" src="./images/joker_.jpg" alt="">
+        </div>
+        <!-- detail -->
+        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-end pb-7 transform translate-y-36 group-hover:translate-y-0 duration-500 delay-100">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold text-xl text-white text-center pb-3">Kamala Kanta<br>
+              <span class="font-medium text-lg text-[#00C5FB] text-center">The Joker</span>
+            </h3>
+            <!-- social -->
+            <ul class="flex items-center gap-2">
+              <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-200 group-hover:opacity-100">
+                <a target="_blank" href="#" class="">
+                  <button id="facebook" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-600 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            </li>
+            <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-300 group-hover:opacity-100">
+              <a target="_blank" class="" href="#" title="">
+                <button id="instagram" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-gradient-to-b from-indigo-600 via-pink-600 to-yellow-500 text-white">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </svg>
+            </a>
+          </li>
+          <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-[400ms] group-hover:opacity-100">
+            <a target="_blank" class="" href="#" title="">
+              <button id="twitter" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-400 text-white">
+                <i class="fab fa-twitter"></i>
+              </button>
+          </a>
+        </li>
+        <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-500 group-hover:opacity-100">
+          <a target="_blank" class="" href="#" title="">
+            <button id="linkedin" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-500 text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+        </a>
+      </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <!-- profile-2 -->
+      <div class="group relative w-72 h-96 bg-gradient-to-b from-[#00C5FB] from-30% to-[#163C5F] to-30% rounded-2xl overflow-hidden">
+        <div class=" top-0 left-0 w-full h-full rounded-2xl overflow-hidden transform duration-500 z-50 origin-top group-hover:translate-y-7 group-hover:scale-50 delay-100">
+          <img class=" top-0 left-0 w-full h-full object-cover" src="./images/j.deep.jpg" alt="">
+        </div>
+        <!-- detail -->
+        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-end pb-7 transform translate-y-36 group-hover:translate-y-0 duration-500 delay-100">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold text-xl text-white text-center pb-3">Kuber <br>
+              <span class="font-medium text-lg text-[#00C5FB] text-center">The Sailor</span>
+            </h3>
+            <!-- social -->
+            <ul class="flex items-center gap-2">
+              <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-200 group-hover:opacity-100">
+                <a target="_blank" href="#" class="">
+                  <button id="facebook" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-600 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            </li>
+            <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-300 group-hover:opacity-100">
+              <a target="_blank" class="" href="#" title="">
+                <button id="instagram" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-gradient-to-b from-indigo-600 via-pink-600 to-yellow-500 text-white">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </svg>
+            </a>
+          </li>
+          <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-[400ms] group-hover:opacity-100">
+            <a target="_blank" class="" href="#" title="">
+              <button id="twitter" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-400 text-white">
+                <i class="fab fa-twitter"></i>
+              </button>
+          </a>
+        </li>
+        <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-500 group-hover:opacity-100">
+          <a target="_blank" class="" href="#" title="">
+            <button id="linkedin" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-500 text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+        </a>
+      </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <!-- profile-3 -->
+      <div class="group relative w-72 h-96 rounded-xl overflow-hidden">
+        <div class="absolute w-full h-full">
+          <img class="absolute w-full h-full object-cover" src="./images/hulk.jpg" alt="">
+        </div>
+        <!-- detail -->
+        <div class="absolute -bottom-32 w-full h-32 flex justify-center items-center backdrop-filter backdrop-blur-lg shadow-lg border-2 border-[#e1ffe11a] rounded-xl p-4 group-hover:bottom-0 transition group-hover:delay-0  ">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold text-2xl text-white text-center pb-3 transform transition delay-200 duration-300 opacity-0 group-hover:opacity-100 -translate-y-5 group-hover:translate-y-0">Himu<br>
+              <span class="font-medium text-lg text-white text-center">The Hulk</span>
+            </h3>
+            <!-- social -->
+            <ul class="flex items-center gap-2">
+              <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-100 group-hover:opacity-100">
+                <a target="_blank" href="#" class="">
+                  <button id="facebook" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-600 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            </li>
+            <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-150 group-hover:opacity-100">
+              <a target="_blank" class="" href="#" title="">
+                <button id="instagram" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-gradient-to-b from-indigo-600 via-pink-600 to-yellow-500 text-white">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </svg>
+            </a>
+          </li>
+          <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-200 group-hover:opacity-100">
+            <a target="_blank" class="" href="#" title="">
+              <button id="twitter" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-400 text-white">
+                <i class="fab fa-twitter"></i>
+              </button>
+          </a>
+        </li>
+        <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-300 group-hover:opacity-100">
+          <a target="_blank" class="" href="#" title="">
+            <button id="linkedin" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-500 text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+        </a>
+      </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <!-- profile-4 -->
+      <div class="group relative w-72 h-96 rounded-xl overflow-hidden">
+        <div class="absolute w-full h-full">
+          <img class="absolute w-full h-full object-cover" src="./images/tom.h.jpg" alt="">
+        </div>
+        <!-- detail -->
+        <div class="absolute -bottom-32 w-full h-32 flex justify-center items-center backdrop-filter backdrop-blur-lg shadow-lg border-2 border-[#e1ffe11a] rounded-xl p-4 group-hover:bottom-0 transition group-hover:delay-0  ">
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-bold text-2xl text-white text-center pb-3 transform transition delay-200 duration-300 opacity-0 group-hover:opacity-100 -translate-y-5 group-hover:translate-y-0">Mantu Mia<br>
+              <span class="font-medium text-lg text-white text-center">The Spider-Man</span>
+            </h3>
+            <!-- social -->
+            <ul class="flex items-center gap-2">
+              <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-100 group-hover:opacity-100">
+                <a target="_blank" href="#" class="">
+                  <button id="facebook" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-600 text-white">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+                </a>
+            </li>
+            <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-150 group-hover:opacity-100">
+              <a target="_blank" class="" href="#" title="">
+                <button id="instagram" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-gradient-to-b from-indigo-600 via-pink-600 to-yellow-500 text-white">
+                  <i class="fab fa-instagram"></i>
+                </button>
+              </svg>
+            </a>
+          </li>
+          <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-200 group-hover:opacity-100">
+            <a target="_blank" class="" href="#" title="">
+              <button id="twitter" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-400 text-white">
+                <i class="fab fa-twitter"></i>
+              </button>
+          </a>
+        </li>
+        <li class="m-1 transform translate-y-36 group-hover:translate-y-0 transition duration-300 opacity-0 delay-300 group-hover:opacity-100">
+          <a target="_blank" class="" href="#" title="">
+            <button id="linkedin" class="bg-[#1f466a] duration-500 w-10 h-10 transform hover:rotate-[360deg] text-xl rounded-full hover:bg-blue-500 text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+        </a>
+      </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
     </section>
-   
+    
 
 
   </main>
