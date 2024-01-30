@@ -1,0 +1,65 @@
+
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+
+    #menu-toggle:checked+#menu {
+      display: block;
+    }
+    .title{
+          transform: rotate(calc(-360deg/6 * var(--i)));
+        }
+        @keyframes animateOne {
+          0%
+          {
+            rotate: 0deg;
+          }  
+          100%
+          {
+            rotate: 360deg;
+          }
+        }
+        @keyframes animateTwo {
+          0%
+          {
+            rotate: 360deg;
+          }  
+          100%
+          {
+            rotate: 0deg;
+          }
+        }
+        /* Base styles for all screen sizes */
+
+/* .title{
+          transform: rotate(calc(-360deg/6 * var(--i)));
+        }
+/* Base styles for all screen sizes */
+
+.title{
+          transform: rotate(calc(-360deg/6 * var(--i)));
+        }
+
+        .item {
+  transition: 0.5s;
+  box-shadow: 0 0 0 4px #222, 0 0 0 6px #fff;
+  transform: rotate(calc(360deg/6 * var(--i)));
+  transform-origin: 12rem; /* Default value for small screens */
+
+  /* Medium screens and up */
+  @media (min-width: 640px) {
+    transform-origin: 12rem;
+  }
+
+  /* Large screens and up */
+  @media (min-width: 768px) {
+    transform-origin: 15.375rem;
+  }
+
+  /* Extra-large screens and up */
+  @media (min-width: 1024px) {
+    transform-origin: 15.375rem;
+  }
+}
+    
+  
