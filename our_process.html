@@ -17,7 +17,15 @@
           font-family: 'Inter', sans-serif;
         }
         
+        @keyframes titleMove {
+      0% {
+        rotate: 360deg;
+      }
 
+      100% {
+        rotate: 0deg;
+      }
+    }
 
 
         
@@ -304,7 +312,13 @@
 </section>
 
 
-
+<!-- section round -->
+<div>
+  <div class="relative overflow-hidden w-24 h-24 md:w-28 md:h-28 bg-black rounded-full before:content-[''] before:absolute before:bg-[#00C5FB] before:-inset-y-0 before:inset-x-0 before:filter before:blur-sm hover:before:inset-y-8 hover:before:-inset-x-0 hover:before:transform hover:before:transition hover:before:duration-700 hover:before:animate-[titleMove_5s_linear_infinite] 
+  after:content-[''] after:absolute after:inset-1 after:bg-gradient-to-b from-[#000] to-[#163C5F] after:rounded-full after:z-20 ">
+  <div class="absolute inset-0 border-2 border-black rounded-full z-30"></div>
+</div>
+</div>
 
 <!-- [#005CEA] -->
   </main>
